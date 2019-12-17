@@ -22,7 +22,8 @@ module.exports = {
   },
   plugins: [
     'react',
-    'prettier'
+    'prettier',
+    'react-hook'
   ],
   rules: {
     'prettier/prettier':'error', // caso não seja encontrada nenhuma regra o prettier mostrará erro
@@ -33,6 +34,8 @@ module.exports = {
     'jsx-a11y/control-has-associated-label':[0],
     'react/state-in-constructor': [0, 'disabled'],
     'no-console': ["error", {allow: ["tron"]}],
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'react-hooks/rules-of-hooks':'error',
+    'react-hooks/exhaustive-deps':'warn'
   },
 };
